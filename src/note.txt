@@ -1,3 +1,12 @@
+ /////how to fetch data
  1 create the loader,
  2 provide the loader and ,
  3 provide the data  from the loader
+
+//////error handlein in react route
+When an error occurs in a React Router route component, it bubbles up to the nearest errorElement defined in the route.
+The errorElement can then access the error using const error = useRouteError();.
+
+You can display or reuse this error inside the error component or in any child components within it.
+
+This allows centralized error handling for routes while still using the error details wherever needed.
