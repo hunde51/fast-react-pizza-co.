@@ -12,13 +12,14 @@ function SearchOrder() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <input 
         placeholder="Search order #"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-      />
+      className="rounded-full bg-yellow-100 px-4 py-2 placeholder:text-stone-400 text-sm w-28 sm:w-64 sm:focus:w-72 focus:ring-opacity-50 transition-all duration-250 focus:outline-none focus:ring focus:ring-yellow-500"/>
     </form>
-  );
+  ); 
 }
 
 export default SearchOrder;
+  
